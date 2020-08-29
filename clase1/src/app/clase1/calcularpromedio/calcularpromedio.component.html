@@ -1,0 +1,36 @@
+<div class="container">
+    <div class="row mt-4 justify-content-center">
+        <div class="col-3 input-group mb-3">
+            <div class="input-group-prepend">
+                <span class="input-group-text">Edad 1</span>
+            </div>
+            <input type="number" class="form-control" name="edad1" [(ngModel)]="edad1">
+        </div>
+        <div class="col-3 input-group mb-3">
+            <div class="input-group-prepend">
+                <span class="input-group-text">Edad 2</span>
+            </div>
+            <input type="number" class="form-control" name="edad2" [(ngModel)]="edad2">
+        </div>
+    </div>
+    <div class="row justify-content-center">
+        <div class="col-6 input-group mb-3">
+            <div class="input-group-prepend">
+                <span class="input-group-text">Promedio</span>
+            </div>
+            <input type="number" class="form-control" name="promedio" [(ngModel)]="promedio">
+        </div>
+    </div>
+    <div class="row justify-content-center">
+        <div class="col-6 input-group mb-3">
+            <div class="input-group-prepend">
+                <span class="input-group-text">Suma</span>
+            </div>
+            <input type="number" class="form-control" name="suma" [(ngModel)]="suma">
+        </div>
+    </div>
+    <div class="row justify-content-center">
+        <button type="button" (click)="calcular()" class="ml-2 mr-2 btn btn-primary">Calcular</button>
+        <button type="button" (click)="limpiarFormulario()" class="ml-2 mr-2 btn btn-primary">Limpiar</button>
+    </div>
+</div>
