@@ -1,16 +1,18 @@
-<nav class="justify-content-center navbar navbar-light bg-light">
-    <a routerLink="" class="nav-item nav-link">
-        <img src="../assets/home.svg" width="30" heigth="30" alt="">
-        Inicio
-    </a>
-    <a href="https://github.com/danielclas/lab-iv" target="blank" class="nav-item nav-link">
-        <img src="../assets/repo.png" width="30" heigth="30" alt="">
-        Repositorio
-    </a>
-</nav>
-<router-outlet></router-outlet>
-<footer class="footer">
-    <div class="footer-copyright text-center">
-        © 2020 | UTN FRA | Daniel Clas
-    </div>  
-</footer>
+<div class="container-fluid background">
+    <nav class="justify-content-center navbar navbar-light bg-light border-bottom">
+        <a routerLink="" class="nav-item nav-link">
+            <img src="../assets/home.svg" width="30" heigth="30" alt="">
+            Inicio
+        </a>
+        <a href="https://github.com/danielclas/lab-iv" target="blank" class="nav-item nav-link">
+            <img src="../assets/repo.png" width="30" heigth="30" alt="">
+            Repositorio
+        </a>
+    </nav>
+    <router-outlet></router-outlet>
+    <footer class="footer w-100 border-top">
+        <div class="footer-copyright text-center">
+            © 2020 | UTN FRA | Daniel Clas
+        </div>  
+    </footer>
+</div>
