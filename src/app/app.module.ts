@@ -10,6 +10,7 @@ import { LoginComponent } from './clase1/login/login.component';
 import { BienvenidoComponent } from './clase1/bienvenido/bienvenido.component';
 import { ErrorComponent } from './clase1/error/error.component';
 import { NotfoundComponent } from './notfound/notfound.component';
+import { CardEjercicioComponent } from './card-ejercicio/card-ejercicio.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { NotfoundComponent } from './notfound/notfound.component';
     LoginComponent,
     BienvenidoComponent,
     ErrorComponent,
-    NotfoundComponent
+    NotfoundComponent,
+    CardEjercicioComponent
   ],
   imports: [
     BrowserModule,

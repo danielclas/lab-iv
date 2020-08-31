@@ -1,22 +1,10 @@
 <div class="container">
     <div class="row mt-4 justify-content-center">
         <div class="col-4">
-            <div class="card">
-                <div class="card-header"> Clase 1 </div>
-                <div class="card-body">
-                    <h5 class="card-title">Calcular promedio</h5>
-                    <a routerLink='/clase1/calcularpromedio' class="btn btn-secondary">Ir al ejercicio</a>
-                </div>
-            </div>
+            <app-card-ejercicio [link]="'/clase1/calcularpromedio'" [titulo]="'Calular promedio'" [clase]="'1'"></app-card-ejercicio>
         </div>
         <div class="col-4">
-            <div class="card">
-                <div class="card-header"> Clase 1 </div>
-                <div class="card-body">
-                    <h5 class="card-title">Ejemplo de login</h5>
-                    <a routerLink='/clase1/login' class="btn btn-secondary">Ir al ejercicio</a>
-                </div>
-            </div>
+            <app-card-ejercicio [link]="'/clase1/login'" [titulo]="'Ejercicio de login'" [clase]="'1'"></app-card-ejercicio>
         </div>
     </div>
 </div>
