@@ -1,18 +1,20 @@
-<div class="container-fluid">
-    <nav class="justify-content-center navbar navbar-light bg-light border-bottom">
-        <a routerLink="" class="nav-item nav-link">
-            <img src="../assets/home.svg" width="30" heigth="30" alt="">
-            Inicio
-        </a>
-        <a href="https://github.com/danielclas/lab-iv" target="blank" class="nav-item nav-link">
-            <img src="../assets/repo.png" width="30" heigth="30" alt="">
-            Repositorio
-        </a>
-    </nav>
-    <router-outlet></router-outlet>
-    <footer class="footer w-100 border-top">
-        <div class="footer-copyright text-center">
-            © 2020 | UTN FRA | Daniel Clas
-        </div>  
-    </footer>
+<div [@routeAnimations]="o && o.activatedRouteData && o.activatedRouteData['animation']">    
+    <div class="container-fluid">
+        <nav class="justify-content-center navbar navbar-light bg-light border-bottom">
+            <a routerLink="" class="nav-item nav-link">
+                <img src="../assets/home.svg" width="30" heigth="30" alt="">
+                Inicio
+            </a>
+            <a href="https://github.com/danielclas/lab-iv" target="blank" class="nav-item nav-link">
+                <img src="../assets/repo.png" width="30" heigth="30" alt="">
+                Repositorio
+            </a>
+        </nav>
+        <router-outlet #o="outlet"></router-outlet>
+        <footer class="footer w-100 border-top">
+            <div class="footer-copyright text-center">
+                © 2020 | UTN FRA | Daniel Clas
+            </div>  
+        </footer>
+    </div>
 </div>
