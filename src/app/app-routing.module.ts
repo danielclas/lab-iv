@@ -1,3 +1,5 @@
+import { ControlEntidadComponent } from './clase-io/control-entidad/control-entidad.component';
+import { BienvenidoIoComponent } from './clase-io/bienvenido-io/bienvenido-io.component';
 import { BienvenidoComponent } from './clase1/bienvenido/bienvenido.component';
 import { NotfoundComponent } from './notfound/notfound.component';
 import { LoginComponent } from './clase1/login/login.component';
@@ -12,6 +14,8 @@ const routes: Routes = [
   {path: 'clase1/calcularpromedio', component: CalcularpromedioComponent},
   {path: 'clase1/login', component: LoginComponent},
   {path: 'clase1/bienvenido', component: BienvenidoComponent},
+  {path: 'clase-io/bienvenido', component: BienvenidoIoComponent},
+  {path: 'clase-io/control-entidad', component: ControlEntidadComponent},
   {path: '**', component: NotfoundComponent, pathMatch: 'full'}
 ];
 

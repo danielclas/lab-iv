@@ -11,6 +11,12 @@ import { BienvenidoComponent } from './clase1/bienvenido/bienvenido.component';
 import { ErrorComponent } from './clase1/error/error.component';
 import { NotfoundComponent } from './notfound/notfound.component';
 import { CardEjercicioComponent } from './card-ejercicio/card-ejercicio.component';
+import { ListadoEntidadComponent } from './clase-io/listado-entidad/listado-entidad.component';
+import { BienvenidoIoComponent } from './clase-io/bienvenido-io/bienvenido-io.component';
+import { ControlEntidadComponent } from './clase-io/control-entidad/control-entidad.component';
+import { HttpClientModule } from '@angular/common/http';
+import { DetalleEntidadComponent } from './clase-io/detalle-entidad/detalle-entidad.component';
+
 
 @NgModule({
   declarations: [
@@ -21,12 +27,17 @@ import { CardEjercicioComponent } from './card-ejercicio/card-ejercicio.componen
     BienvenidoComponent,
     ErrorComponent,
     NotfoundComponent,
-    CardEjercicioComponent
+    CardEjercicioComponent,
+    ListadoEntidadComponent,
+    BienvenidoIoComponent,
+    ControlEntidadComponent,
+    DetalleEntidadComponent
   ],
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
     AppRoutingModule,
+    HttpClientModule,
     FormsModule
   ],
   providers: [],
