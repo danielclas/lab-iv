@@ -14,4 +14,8 @@ export class DetalleEntidadComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  cerrarTarjeta(){
+    this.usuario = null;
+  }
+
 }

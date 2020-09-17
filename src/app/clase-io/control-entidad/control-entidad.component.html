@@ -1,8 +1,8 @@
 <div class="row justify-content-start">
-    <div class="col-6">
-        <app-listado-entidad [listado]="listado"></app-listado-entidad>
+    <div class="col-4">
+        <app-listado-entidad (usuarioEvent)="asignarUsuario($event)" [listado]="listado"></app-listado-entidad>
     </div>
     <div class="col-6">
-        <app-detalle-entidad></app-detalle-entidad>
+        <app-detalle-entidad [usuario]="usuario"></app-detalle-entidad>
     </div>
 </div>

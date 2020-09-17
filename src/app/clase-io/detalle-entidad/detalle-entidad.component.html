@@ -1,13 +1,21 @@
-<!-- <div class="col-12">
-    <div class="card-header">
-        {{usuario.Nombre}} {{usuario.Apellido}} 
+<div *ngIf="usuario" class="col-12">
+    <div class="card shadow-lg m-3">
+        <div class="card-header">
+            <h5 class="ml-3 mt-2">{{usuario.Nombre}} {{usuario.Apellido}}</h5>
+        </div>
+        <div class="card-body">
+            <p><b>Email: </b>{{usuario.email}}</p>
+            <p><b>Fecha Nac.: </b>{{usuario.FechaNac}}</p>
+            <br>
+            <span class="row justify-content-center">
+                <img src="{{usuario.FotoPerfil}}" alt="Foto de perfil">
+            </span>
+            <span class="row justify-content-center">
+                <img style="width: 45px; height: 45px;" (click)="cerrarTarjeta()" src="https://img.icons8.com/plasticine/100/000000/close-window.png"/>
+            </span>
+        </div>
     </div>
-    <div class="card-body">
-        <p><b>Email: </b>{{usuario.email}}</p>
-        <p><b>Fecha Nac.: </b>{{usuario.FechaNac}}</p>
-        <br>
-        <span class="row justify-content-center">
-            <img src="{{usuario.FotoPerfil}}" alt="Foto de perfil">
-        </span>
-    </div>
-</div> -->
+</div>
+<div *ngIf="!usuario" class="col-12 mt-4 justify-content-center">
+    <h2>No hay usuario seleccionado</h2>
+</div>
