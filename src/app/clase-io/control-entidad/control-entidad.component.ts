@@ -9,7 +9,8 @@ import { Usuario } from '../usuario';
 })
 export class ControlEntidadComponent implements OnInit {
 
-  listado: [];
+  listado: Usuario[] = [];
+  listadoBorrados: Usuario[] = [];
   usuario: Usuario;
   constructor(private request: RequestService) { }
 
@@ -19,7 +20,11 @@ export class ControlEntidadComponent implements OnInit {
 
   asignarUsuario(usuario: Usuario){
     this.usuario = usuario;
-    console.log("Usuario: ", usuario);
   }
 
+  agregarUsuarioBorrado(usuario: Usuario){
+    if(!this.listadoBorrados.some(a => a.id == usuario.id)){
+      this.listadoBorrados.push(usuario);
+    }
+  }
 }

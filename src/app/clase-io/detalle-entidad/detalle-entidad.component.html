@@ -11,7 +11,10 @@
                 <img src="{{usuario.FotoPerfil}}" alt="Foto de perfil">
             </span>
             <span class="row justify-content-center">
-                <img style="width: 45px; height: 45px;" (click)="cerrarTarjeta()" src="https://img.icons8.com/plasticine/100/000000/close-window.png"/>
+                <button (click)="cerrarTarjeta()" class="btn btn-warning btn-xs mt-2">Cerrar tarjeta</button>
+            </span>
+            <span class="row justify-content-center">
+                <app-boton-entidad (usuarioEvent)="emitirUsuario($event)" [usuario]="usuario"></app-boton-entidad>
             </span>
         </div>
     </div>

@@ -3,6 +3,11 @@
         <app-listado-entidad (usuarioEvent)="asignarUsuario($event)" [listado]="listado"></app-listado-entidad>
     </div>
     <div class="col-6">
-        <app-detalle-entidad [usuario]="usuario"></app-detalle-entidad>
+        <app-detalle-entidad (usuarioEvent)="agregarUsuarioBorrado($event) "[usuario]="usuario"></app-detalle-entidad>
+    </div>
+</div>
+<div *ngIf="listadoBorrados != null && listadoBorrados.length > 0" class="row justify-content-start" style="opacity: .4;">
+    <div class="col-4">
+        <app-listado-entidad [listado]="listadoBorrados"></app-listado-entidad>
     </div>
 </div>

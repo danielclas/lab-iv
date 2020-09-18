@@ -16,6 +16,7 @@ import { BienvenidoIoComponent } from './clase-io/bienvenido-io/bienvenido-io.co
 import { ControlEntidadComponent } from './clase-io/control-entidad/control-entidad.component';
 import { HttpClientModule } from '@angular/common/http';
 import { DetalleEntidadComponent } from './clase-io/detalle-entidad/detalle-entidad.component';
+import { BotonEntidadComponent } from './clase-io/boton-entidad/boton-entidad.component';
 
 
 @NgModule({
@@ -31,7 +32,8 @@ import { DetalleEntidadComponent } from './clase-io/detalle-entidad/detalle-enti
     ListadoEntidadComponent,
     BienvenidoIoComponent,
     ControlEntidadComponent,
-    DetalleEntidadComponent
+    DetalleEntidadComponent,
+    BotonEntidadComponent
   ],
   imports: [
     BrowserModule,

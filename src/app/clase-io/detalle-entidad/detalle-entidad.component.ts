@@ -1,5 +1,5 @@
 import { Usuario } from '../usuario';
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
 
 @Component({
   selector: 'app-detalle-entidad',
@@ -9,6 +9,8 @@ import { Component, Input, OnInit } from '@angular/core';
 export class DetalleEntidadComponent implements OnInit {
 
   @Input() usuario: Usuario;
+  @Output() usuarioEvent = new EventEmitter<Usuario>();
+
   constructor() { }
 
   ngOnInit(): void {
@@ -16,6 +18,10 @@ export class DetalleEntidadComponent implements OnInit {
 
   cerrarTarjeta(){
     this.usuario = null;
+  }
+  
+  emitirUsuario(value: Usuario) {
+    this.usuarioEvent.emit(value);
   }
 
 }
