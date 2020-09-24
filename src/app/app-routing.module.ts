@@ -1,3 +1,4 @@
+import { PreParcialHomeComponent } from './pre-parcial/pre-parcial-home/pre-parcial-home.component';
 import { ControlEntidadComponent } from './clase-io/control-entidad/control-entidad.component';
 import { BienvenidoIoComponent } from './clase-io/bienvenido-io/bienvenido-io.component';
 import { BienvenidoComponent } from './clase1/bienvenido/bienvenido.component';
@@ -16,6 +17,7 @@ const routes: Routes = [
   {path: 'clase1/bienvenido', component: BienvenidoComponent},
   {path: 'clase-io/bienvenido', component: BienvenidoIoComponent},
   {path: 'clase-io/control-entidad', component: ControlEntidadComponent},
+  {path: 'clase-pp/home', component: PreParcialHomeComponent},
   {path: '**', component: NotfoundComponent, pathMatch: 'full'}
 ];
 

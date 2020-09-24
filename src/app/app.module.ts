@@ -17,6 +17,9 @@ import { ControlEntidadComponent } from './clase-io/control-entidad/control-enti
 import { HttpClientModule } from '@angular/common/http';
 import { DetalleEntidadComponent } from './clase-io/detalle-entidad/detalle-entidad.component';
 import { BotonEntidadComponent } from './clase-io/boton-entidad/boton-entidad.component';
+import { PreParcialHomeComponent } from './pre-parcial/pre-parcial-home/pre-parcial-home.component';
+import { RegionesComponent } from './pre-parcial/regiones/regiones.component';
+import { PaisBanderaComponent } from './pre-parcial/pais-bandera/pais-bandera.component';
 
 
 @NgModule({
@@ -33,7 +36,10 @@ import { BotonEntidadComponent } from './clase-io/boton-entidad/boton-entidad.co
     BienvenidoIoComponent,
     ControlEntidadComponent,
     DetalleEntidadComponent,
-    BotonEntidadComponent
+    BotonEntidadComponent,
+    PreParcialHomeComponent,
+    RegionesComponent,
+    PaisBanderaComponent
   ],
   imports: [
     BrowserModule,
