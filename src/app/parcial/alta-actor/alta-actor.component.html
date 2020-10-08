@@ -1,0 +1,67 @@
+<div class="row w-80 py-3 justify-content-center">
+    <div class="row">
+    <div class="col-md-4 order-md-2 mb-4 overflow-auto" style="height: 350px;">
+      <h4 class="d-flex justify-content-between align-items-center mb-3">
+        <span class="text-muted">Seleccione pais</span>
+      </h4>
+      <ul class="list-group mb-3">
+        <span *ngFor="let pais of paises">
+            <app-lista-item-pais (paisEvent)="cambiarPais($event)" [pais]="pais"></app-lista-item-pais>
+        </span>                
+      </ul>
+    </div>
+    <div class="col-md-8 order-md-1">
+      <h4 class="mb-3">Registrar actor</h4>
+      <form class="needs-validation" novalidate="">
+        <div class="row">
+          <div class="col-md-6 mb-3">
+            <label for="primerNombre">Primer nombre</label>
+            <input [(ngModel)]="primerNombre" name="primerNombre" type="text" class="form-control" id="primerNombre" placeholder="" value="" [ngModelOptions]="{standalone: true}">
+            <div class="invalid-feedback">
+              Valid first name is required.
+            </div>
+          </div>
+          <div class="col-md-6 mb-3">
+            <label for="apellido">Apellido</label>
+            <input [(ngModel)]="apellido" name="apellido" type="text" class="form-control" id="apellido" placeholder="" value="" [ngModelOptions]="{standalone: true}">
+            <div class="invalid-feedback">
+              Valid last name is required.
+            </div>
+          </div>
+        </div>
+
+        <div class="mb-3">
+          <label for="pais">Pais </label>
+          <input [(ngModel)]="pais" name="pais" type="text" class="form-control" id="pais" placeholder="Seleccione un pais" disabled [ngModelOptions]="{standalone: true}">
+        </div>
+
+        <div class="mb-3">
+          <label for="email">Email </label>
+          <input [(ngModel)]="email" name="email" type="email" class="form-control" id="email" placeholder="vos@ejemplo.com" [ngModelOptions]="{standalone: true}">
+        </div>
+        
+        <div class="mb-3">
+            <label for="sexo">Sexo </label>
+            <select [(ngModel)]="sexo" name="sexo" id="sexo" class="browser-default custom-select" [ngModelOptions]="{standalone: true}">
+                <option selected=""></option>
+                <option value="F">Mujer</option>
+                <option value="M">Hombre</option>
+            </select>
+        </div>
+        
+        <div class="mb-3">
+            <label for="fechaNacimiento">Fecha de nacimiento </label>
+            <br>
+            <dp-date-picker [(ngModel)]="fechaNacimiento" [ngModelOptions]="{standalone: true}"></dp-date-picker>  
+        </div>
+
+        <div class="mb-3">
+          <label for="direccion">Dirección</label>
+          <input [(ngModel)]="direccion" name="direccion" type="text" class="form-control" id="direccion" placeholder="1234 Calle principal" [ngModelOptions]="{standalone: true}">
+        </div>    
+        <p style="color: red;" *ngIf="error"> Error en los datos cargados     </p>
+        <button class="btn btn-primary btn-lg btn-block" type="submit" (click)="validarAlta()">Registrar actor</button>
+      </form>
+    </div>
+  </div>
+</div>
