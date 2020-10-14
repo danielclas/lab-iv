@@ -1,3 +1,6 @@
+import { ActorListadoComponent } from './parcial/actor-listado/actor-listado.component';
+import { AltaActorComponent } from './parcial/alta-actor/alta-actor.component';
+import { HomeParcialComponent } from './parcial/home-parcial/home-parcial.component';
 import { PreParcialHomeComponent } from './pre-parcial/pre-parcial-home/pre-parcial-home.component';
 import { ControlEntidadComponent } from './clase-io/control-entidad/control-entidad.component';
 import { BienvenidoIoComponent } from './clase-io/bienvenido-io/bienvenido-io.component';
@@ -18,6 +21,10 @@ const routes: Routes = [
   {path: 'clase-io/bienvenido', component: BienvenidoIoComponent},
   {path: 'clase-io/control-entidad', component: ControlEntidadComponent},
   {path: 'clase-pp/home', component: PreParcialHomeComponent},
+  {path: 'parcial/home', component: HomeParcialComponent},
+  {path: 'parcial/tablaPaises', component: PreParcialHomeComponent},
+  {path: 'parcial/altaActor', component: AltaActorComponent},
+  {path: 'parcial/actor/listado', component: ActorListadoComponent},
   {path: '**', component: NotfoundComponent, pathMatch: 'full'}
 ];
 

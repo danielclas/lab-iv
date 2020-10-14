@@ -6,7 +6,7 @@ import { HttpClient } from '@angular/common/http';
 })
 export class RequestService {
 
-  url: string = "https://api.mocki.io/v1/570c5e5c";
+  url: string = "https://restcountries.eu/rest/v2/region/americas";
 
   constructor(private http: HttpClient) { }
 

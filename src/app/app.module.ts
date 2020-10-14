@@ -20,7 +20,13 @@ import { BotonEntidadComponent } from './clase-io/boton-entidad/boton-entidad.co
 import { PreParcialHomeComponent } from './pre-parcial/pre-parcial-home/pre-parcial-home.component';
 import { RegionesComponent } from './pre-parcial/regiones/regiones.component';
 import { PaisBanderaComponent } from './pre-parcial/pais-bandera/pais-bandera.component';
-
+import { HomeParcialComponent } from './parcial/home-parcial/home-parcial.component';
+import { AltaActorComponent } from './parcial/alta-actor/alta-actor.component';
+import { ListaItemPaisComponent } from './parcial/lista-item-pais/lista-item-pais.component';
+import {DpDatePickerModule} from 'ng2-date-picker';
+import { ActorListadoComponent } from './parcial/actor-listado/actor-listado.component';
+import {MatDialogModule} from '@angular/material/dialog';
+import { ListaActoresComponent } from './parcial/lista-actores/lista-actores.component';
 
 @NgModule({
   declarations: [
@@ -39,14 +45,21 @@ import { PaisBanderaComponent } from './pre-parcial/pais-bandera/pais-bandera.co
     BotonEntidadComponent,
     PreParcialHomeComponent,
     RegionesComponent,
-    PaisBanderaComponent
+    PaisBanderaComponent,
+    HomeParcialComponent,
+    AltaActorComponent,
+    ListaItemPaisComponent,
+    ActorListadoComponent,
+    ListaActoresComponent
   ],
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
     AppRoutingModule,
     HttpClientModule,
-    FormsModule
+    FormsModule,
+    DpDatePickerModule,
+    MatDialogModule
   ],
   providers: [],
   bootstrap: [AppComponent]
